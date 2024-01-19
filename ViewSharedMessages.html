@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+<title>BSSPD</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><span>BlockStore: A Secure Decentralized Storage Framework On Blockchain</span><small></small></h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="menu_nav">
+         <ul>
+      
+      <li><a href="{% url 'SharedData' %}">Share Secured Data</a></li>
+	   <li><a href="{% url 'ViewSharedMessages' %}">View Shared Messages</a></li>
+	   <li><a href="{% url 'Graph' %}">Storage Overhead Graph</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li>
+   </ul>
+          </ul>
+        </div>
+        <div class="hbg"><img src="{% static 'images/header_images.jpg' %}" width="915" height="286" alt="" /></div>
+      				<center>
+  
+	 <br/>
+	{{ data|safe }}
+				
+					</table><br/><br/><br/><br/><br/><br/>
+	</body>
+</html>

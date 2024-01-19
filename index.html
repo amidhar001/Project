@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+<head>
+<title>BSSPD</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><span>BlockStore: A Secure Decentralized Storage Framework On Blockchain</span><small></small></h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="menu_nav">
+          <ul>
+           <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'Login' %}">User Login Here</a></li>
+      <li><a href="{% url 'Signup' %}">New User Signup Here</a></li>
+     
+   </ul>
+          </ul>
+        </div>
+        <div class="hbg"><img src="{% static 'images/header_images.jpg' %}" width="915" height="286" alt="" /></div>
+
+		{{ data }}
+
+       <p align="justify"><font size="3" style="font-family: Comic Sans MS" color="black">Abstract-Privacy protection and open sharing are the core of data governance in the AI-driven era. A common data-sharing management
+platform is indispensable in the existing data-sharing solutions, and users upload their data to the cloud server for storage and
+dissemination. However, from the moment users upload the data to the server, they will lose absolute ownership of their data,
+and security and privacy will become a critical issue. Although data encryption and access control are considered up and coming
+technologies in protecting personal data security on the cloud server, they alleviate this problem to a certain extent.
+However, it still depends too much on a third-party organization's credibility, the Cloud Service Provider (CSP). In this paper,
+we combined blockchain, ciphertext-policy attribute-based encryption (CP-ABE), and InterPlanetary File System (IPFS) to
+address this problem to propose a blockchain-based security sharing scheme for personal data named BSSPD. In this usercentric
+scheme, the data owner encrypts the sharing data and stores it on IPFS, which maximizes the scheme's decentralization.
+The address and the decryption key of the shared data will be encrypted with CP-ABE according to the specific access policy,
+and the data owner uses blockchain to publish his data-related information and distribute keys for data users. Only the data
+user whose attributes meet the access policy can download and decrypt the data. </p>
+<p align="justify"><font size="3" style="font-family: Comic Sans MS" color="black">
+The data owner has fine-grained access control
+over his data, and BSSPD supports an attribute-level revocation of a specific data user without affecting others. To further
+protect the data user's privacy, the ciphertext keyword search is used when retrieving data. We analyzed the security of the
+BBSPD and simulated our scheme on the EOS blockchain, which proved that our scheme is feasible. Meanwhile, we provided a
+thorough analysis of the storage and computing overhead, which proved that BSSPD has a good performance.
+</p>
+ 
+ 
+  </body>
+</html>
